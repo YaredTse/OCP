@@ -1,4 +1,6 @@
 target/*
 idea/*
 Ocp.iml
+.idea/*.xml
+.idea/workspace.xml
 

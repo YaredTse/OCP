@@ -1,4 +1,4 @@
-package functional_programming.FactoryPattern;
+package functional_programming;
 
 import java.util.function.UnaryOperator;
 
@@ -9,6 +9,7 @@ public class UnaryOperatorExer {
     }
 
     public static void main(String [] args ){
+
         System.out.println(" * * * * * * * UnaryOperator Sample * * * * * * * ");
 
         UnaryOperator<String> unaryOperator = String::toUpperCase;
@@ -18,11 +19,12 @@ public class UnaryOperatorExer {
         System.out.println( integerUnaryOperator.apply("xxxx"));
 
         UnaryOperatorExer unaryOperatorExer = new UnaryOperatorExer();
+
         unaryOperatorExer.calculateUsingUnary( 12, a -> {
             System.out.print( ++a );
+            System.out.print( a.toString() );
             return ++a;
         });
 
     }
-
 }

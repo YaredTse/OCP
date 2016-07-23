@@ -1,4 +1,4 @@
-package functional_programming.FactoryPattern;
+package functional_programming;
 
 import java.util.function.BiFunction;
 
