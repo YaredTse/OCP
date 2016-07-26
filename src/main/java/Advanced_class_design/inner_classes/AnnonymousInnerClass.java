@@ -34,5 +34,4 @@ public class AnnonymousInnerClass {
 
         System.out.println( ba );
     }
-
 }

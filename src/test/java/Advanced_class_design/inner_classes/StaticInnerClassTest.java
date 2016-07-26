@@ -25,11 +25,16 @@ public class StaticInnerClassTest {
         Assert.assertEquals( staticInnerClass.returnLength(str), 13 );
     }
 
-
     @Test
     public void wrongInput(){
         String str = "random string";
         Assert.assertEquals( staticInnerClass.returnLength( str ), 13 );
     }
 
+    @Test
+    public void createInstanceOfStatic(){
+        StaticInnerClass.InnerStatic innerStatic = new StaticInnerClass.InnerStatic();
+        Assert.assertEquals( innerStatic.retutnName("strin"), "strin"  );
+        Assert.assertEquals( StaticInnerClass.InnerStatic.staticMethod("t"), "T"  );
+    }
 }
