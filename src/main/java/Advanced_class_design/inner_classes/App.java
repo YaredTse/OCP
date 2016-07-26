@@ -48,7 +48,23 @@ public class App {
         App.InnerTwo innerTwo = a.new InnerTwo();
         innerTwo.printName();
 
-        App.Inner.InnerInner t = a.new Inner().new InnerInner();
+        App.Inner ai = a.new Inner();
+        App.Inner.InnerInner t = ai.new InnerInner();
         t.testT();
     }
 }
+
+/**
+ *
+ * Advanced Class Design
+ * Design Pattern and Principals
+ * Generics and Collections
+ * Functional Programming
+ * Date, String and Localization
+ * Exceptions and Assertions
+ * Concurrency
+ * IO
+ * NIO
+ * JDBC
+ *
+**/
