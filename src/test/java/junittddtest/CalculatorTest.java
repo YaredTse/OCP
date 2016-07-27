@@ -10,12 +10,12 @@ public class CalculatorTest {
     Calculator calculator;
 
     @Before
-    public void setUO(){
+    public void setUp(){
         calculator = new Calculator();
     }
 
     @Test
-    public void addTeoNumbers(){
+    public void addTwoNumbers(){
         int result = calculator.add(2, 3);
         Assert.assertEquals( result, 5);
     }
@@ -33,7 +33,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void divide0toaNumber(){
+    public void divideZeroByWholeNumber(){
         int result = calculator.divide( 0, 2);
         Assert.assertEquals( result, 0 );
     }
